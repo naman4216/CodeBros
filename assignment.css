@@ -1,0 +1,459 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e0dddd;
+    padding: 10px 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 30px;
+}
+
+.logo span {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    padding: 5px 10px;
+}
+.nav-links li.login-button a {
+    background-color:#e24f4f ; /* Light red color */
+    color: #fff; /* White text color */
+    border-radius: 5px; /* Add rounded corners */
+    padding: 8px 15px; /* Adjust padding as needed */
+}
+
+.nav-links li.login-button a:hover {
+    background-color: #f0a8a8; /* Lighter red color on hover */
+}
+
+.nav-links li a:hover {
+    background-color: #ddd;
+    color: #000;
+}
+.banner {
+    position: relative;
+}
+
+.banner img {
+    width: 100%; /* Make the image fill the container */
+    height: auto; /* Maintain the aspect ratio of the image */
+}
+.background-image-section {
+    background-image: url('processpic.png'); /* Replace 'your-image-path.jpg' with the path to your image file */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff; /* Set text color to white or a color that is visible on the image */
+    padding: 300px; /* Adjust padding as needed */
+    text-align: center;
+}
+
+.why-we-section {
+    background-color: #f1f1f1;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.why-we-section h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Flash Cards */
+.flash-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.flash-card {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+    width: 300px;
+    height: 300px; /* Adjust the height as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.flash-card i {
+    font-size: 48px;
+    margin-bottom: 15px;
+    color: #3498db;
+}
+
+.flash-card h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.flash-card p {
+    font-size: 16px;
+    color: #777;
+}
+.faq-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.faq-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.faq-item {
+    width: 45%;
+    margin: 10px;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.faq-item:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question h3 {
+    margin: 0;
+}
+
+.toggle-answer {
+    background-color: #e24f4f;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.answer {
+    display: none;
+    padding-top: 10px;
+}
+
+.faq-item.active .answer {
+    display: block;
+}
+.feedback-section {
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .feedback-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .feedback-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .feedback-text {
+    font-size: 32px;
+    margin-right: 20px; /* Add margin as needed */
+    padding: 5px;
+    margin: 5px;
+  }
+  
+  .testimonial-text {
+    font-size: 58px;
+    font-weight: bold;
+    padding: 5px;
+    margin: 5px;
+  }
+  
+  .portfolio-button {
+    background-color: #ffffff;
+    color: #010101;
+    border: none;
+    padding: 15px 30px; /* Adjust the values for width and height */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 24px; /* Set the desired text size */
+    font-family: 'Poppins', sans-serif; /* Set the desired font family */
+    margin-right: 10px;
+  }
+  
+  .testimonial-heading {
+    font-size: 24px;
+    color: #555;
+    text-align: left;
+  }
+  
+  .portfolio-content {
+    display: flex;
+    justify-content: space-between; /* Add space between the button and other content */
+    align-items: center;
+  }
+  
+  .feedback-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Adjust the gap between columns */
+  }
+  
+  .feedback-item {
+    flex: 1;
+    background-color: #f8f8f8; /* Set the background color to white */
+    color: #000000;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: left; /* Align the text to the left */
+  }
+  
+  .feedback-item h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px; /* Add space below the heading */
+  }
+  
+  .feedback-item p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 15px; /* Add space below the paragraph */
+  }
+  
+  .star-ratings {
+    font-size: 24px; /* Adjust the size of the stars */
+    color: #000;
+    margin-bottom: 10px; /* Add space below the stars */
+  }
+  
+  .customer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .customer-info img {
+    width: 100px; /* Adjust the width of the customer image */
+    height: 100px; /* Adjust the height of the customer image */
+    border-radius: 50%; /* Make the image round */
+    margin: 10px 0;
+  }
+  
+  .customer-info p {
+    font-size: 16px;
+    font-weight: bold;
+  }.accuracy-section {
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+h2 {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid;
+    animation: typing 3s steps(40) forwards; /* Corrected the keyframes name here */
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+p {
+    opacity: 0;
+    animation: fadeIn 1s forwards 2s;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+.footer {
+    background-color: #e0dddd;
+    color: #000000;
+    padding: 5px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-left {
+    max-width: 40%;
+}
+.footer-left p {
+    margin-left: 30px; /* Add left margin to the phone and email */
+}
+.footer-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.footer-logo span {
+    font-size: 32px; /* Adjust the font size to your preference */
+    font-weight: bold;
+    margin-right: 10px; /* Add a margin between the company name and the logo */
+    margin-left: 25px; /* Add left margin to the company name */
+}
+.footer-logo img {
+    width: 50px;
+    height: 50px;
+    /* margin-right: 10px; */
+}
+
+.footer-right {
+    display: flex;
+}
+
+.footer-right a {
+    margin-right: 20px;
+    margin-top: 10px;
+}
+.footer-right a img {
+    width: 25px; /* Adjust the width to your preference */
+    height: 25px; /* Adjust the height to your preference */
+    margin-right: 20px;
+}
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+.footer-links {
+    flex: 1;
+    max-width: 40%;
+    text-align: center; 
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-links li {
+    margin-right: 50px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+/* Add this media query for screens with a maximum width of 768 pixels (typical for tablets and mobile devices) */
+@media only screen and (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background-color: #e0dddd;
+        text-align: center;
+        display: none; /* Initially hide the links */
+    }
+
+    .nav-links.show {
+        display: flex; /* Show the links when the navigation is active */
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .banner img {
+        height: auto; /* Let the image scale proportionally on smaller screens */
+    }
+
+    .background-image-section {
+        padding: 150px; /* Adjust padding as needed for smaller screens */
+    }
+
+    .faq-item,
+    .feedback-item {
+        width: 80%; /* Make FAQ and feedback items full width on smaller screens */
+    }
+
+    .faq-section,
+    .feedback-section,
+    .accuracy-section {
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .faq-container {
+        flex-direction: column;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links ul {
+        flex-direction: column;
+    }
+
+    .footer-links li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
